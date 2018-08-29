@@ -1,0 +1,63 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+    <body>
+     <h1>This is the Advanced Search Page</h1>
+
+    <form action ='search_result' method = "POST">
+    Mode
+    <select name="type_mode">
+            <option value= 0 >type 1 or/and type 2</option>
+            <option value= 1 >type 1 and type 2 both</option>
+    </select>
+
+        <br> Type:
+      <select name="type1">
+            <option value= 9 >acier</option>
+            <option value= 2 >combat</option>
+            <option value= 16 >dragon</option>
+            <option value= 11 >eau</option>
+            <option value= 13 >eletrik</option>
+            <option value= 18 >fee</option>
+            <option value= 10 >feu</option>
+            <option value= 15 >glace</option>
+            <option value= 7 >insecte</option>
+            <option value= 1 >normal</option>
+            <option value= 12 >plante</option>
+            <option value= 4 >poison</option>
+            <option value= 14 >psy</option>
+            <option value= 6 >roche</option>
+            <option value= 5 >sol</option>
+            <option value= 8 >spectre</option>
+            <option value= 17 >tenebres</option>
+            <option value= 13 >vol</option>
+        </select>
+        <br>Type 2:
+        <select name="type2">
+                <option value= 9 >acier</option>
+                <option value= 2 >combat</option>
+                <option value= 16 >dragon</option>
+                <option value= 11 >eau</option>
+                <option value= 13 >eletrik</option>
+                <option value= 18 >fee</option>
+                <option value= 10 >feu</option>
+                <option value= 15 >glace</option>
+                <option value= 7 >insecte</option>
+                <option value= 1 >normal</option>
+                <option value= 12 >plante</option>
+                <option value= 4 >poison</option>
+                <option value= 14 >psy</option>
+                <option value= 6 >roche</option>
+                <option value= 5 >sol</option>
+                <option value= 8 >spectre</option>
+                <option value= 17 >tenebres</option>
+                <option value= 13 >vol</option>
+            </select>
+
+          <input type="submit" value="Search by type">
+     </form>
+        <a href='.'>Go back to the list</a> 
+    </body>
+{% endblock %}
+
