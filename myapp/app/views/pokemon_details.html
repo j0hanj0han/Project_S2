@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+    <body>
+        
+        <h1>Pokemon Details</h1>
+        <h2>How PV for this Pokemon : {{pokemons.pv}}</h2>
+        <img src="https://www.pokebip.com{{pokemons.img}}" alt="{{pokemons.name}}">
+        <br>
+        <a href="/">Return to Pokemons List</a>  
+    </body>
+
+
+{% endblock %}

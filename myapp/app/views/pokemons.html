@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<body>
+    <h1>Pokemon List</h1>
+    
+    <a href="search" class="btn btn-outline-primary float-right" role="button">Advanced Search</a>
+
+        <table id="table_id" class="display">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>NAME</th> 
+                    <th>POKEDEX ID</th>
+                    <th>TYPE</th>
+                </tr>
+            </thead>
+        <tbody>
+            {% for pokemon in pokemons %}
+            <tr>
+                <td>{{pokemon.id}}</td>
+                <td>{{pokemon.name}}</td> 
+                <td>{{pokemon.pokedex_id}}</td>
+                <td>{{pokemon.type}}<a href="pokemons/{{pokemon.name}}"> Go to Profile</a></td>
+            </tr>
+            {% endfor %}
+        </tbody>    
+            
+        </table>
+</body>
+{% endblock %}
+
+
